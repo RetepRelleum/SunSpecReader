@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2017 , Peter Müller. All rights reserved.
+  ~
+  ~
+  ~ THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY
+  ~ KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+  ~ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  ~ NONINFRINGEMENT.  IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT
+  ~ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+  ~ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+  ~ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+  ~ SOFTWARE.
+  -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <CheckBox
+        android:id="@+id/id_ListAdapterIsSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:checked="false"
+        app:layout_constraintEnd_toStartOf="@+id/id_ListAdapterName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/id_ListAdapterName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:layerType="none"
+        android:text="@string/name"
+        app:layout_constraintEnd_toStartOf="@+id/id_ListAdapterHostName"
+        app:layout_constraintStart_toEndOf="@+id/id_ListAdapterIsSelected"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/id_ListAdapterHostName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="x"
+        app:layout_constraintEnd_toStartOf="@+id/id_ListAdapterIP"
+        app:layout_constraintStart_toEndOf="@+id/id_ListAdapterName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <TextView
+        android:id="@+id/id_ListAdapterIP"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/id_ListAdapterPort"
+        app:layout_constraintStart_toEndOf="@+id/id_ListAdapterHostName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <TextView
+        android:id="@+id/id_ListAdapterPort"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/id_ListAdapterUnitId"
+        app:layout_constraintStart_toEndOf="@+id/id_ListAdapterIP"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="88dp" />
+    />
+
+    <TextView
+        android:id="@+id/id_ListAdapterUnitId"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/id_ListAdapterStartingAdress"
+        app:layout_constraintStart_toEndOf="@+id/id_ListAdapterPort"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <TextView
+        android:id="@+id/id_ListAdapterStartingAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/id_ListAdapterdelete_btn"
+        app:layout_constraintStart_toEndOf="@+id/id_ListAdapterUnitId"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <ImageButton
+        android:id="@+id/id_ListAdapterdelete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:contentDescription="@string/loescht_die_daten"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_ListAdapterStartingAdress"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:layout_editor_absoluteX="96dp" />
+
+</android.support.constraint.ConstraintLayout>

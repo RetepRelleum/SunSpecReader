@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ch.gr.relleum.retep.sunspec.SunSpecActivity">
+    <item
+        android:id="@+id/id_setup"
+        android:title="@string/setup" />
+    <item
+        android:id="@+id/id_list"
+        android:title="@string/list" />
+    <item
+        android:id="@+id/id_NaN"
+        android:checkable="true"
+        android:title="@string/nan_values" />
+    <item
+        android:id="@+id/leseIp"
+        android:orderInCategory="100"
+        android:title="@string/lese_ip_sunspec_ger_te"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/idAddIP"
+        android:title="@string/itemaddip" />
+</menu>
