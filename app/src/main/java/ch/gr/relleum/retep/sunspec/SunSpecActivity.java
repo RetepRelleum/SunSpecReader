@@ -13,7 +13,7 @@ import ch.retep.relleum.modbus.Read0X03;
 public class SunSpecActivity extends AppCompatActivity {
 
 
-
+// test
     private ViewFlipper mViewFlipper;
 
     private SunSpecList sunSpecList;
